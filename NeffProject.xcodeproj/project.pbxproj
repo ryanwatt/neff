@@ -7,50 +7,151 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12F2EE111AD49D84007F1288 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F2EE101AD49D84007F1288 /* main.m */; };
-		12F2EE141AD49D84007F1288 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F2EE131AD49D84007F1288 /* AppDelegate.m */; };
-		12F2EE171AD49D84007F1288 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F2EE161AD49D84007F1288 /* ViewController.m */; };
-		12F2EE1A1AD49D84007F1288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F2EE181AD49D84007F1288 /* Main.storyboard */; };
-		12F2EE1C1AD49D84007F1288 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F2EE1B1AD49D84007F1288 /* Images.xcassets */; };
-		12F2EE1F1AD49D84007F1288 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F2EE1D1AD49D84007F1288 /* LaunchScreen.xib */; };
-		12F2EE2B1AD49D84007F1288 /* NeffProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F2EE2A1AD49D84007F1288 /* NeffProjectTests.m */; };
+		128AE3301AD2F43000909D16 /* Bebas Neue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 128AE32F1AD2F23D00909D16 /* Bebas Neue.ttf */; };
+		12CD76CE1AC0650500438D7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD76CD1AC0650500438D7E /* main.m */; };
+		12CD76D11AC0650500438D7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD76D01AC0650500438D7E /* AppDelegate.m */; };
+		12CD76D41AC0650500438D7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD76D31AC0650500438D7E /* ViewController.m */; };
+		12CD76D71AC0650600438D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CD76D51AC0650600438D7E /* Main.storyboard */; };
+		12CD76D91AC0650600438D7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CD76D81AC0650600438D7E /* Images.xcassets */; };
+		12CD76DC1AC0650600438D7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12CD76DA1AC0650600438D7E /* LaunchScreen.xib */; };
+		12CD76E81AC0650600438D7E /* NeffProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD76E71AC0650600438D7E /* NeffProjectTests.m */; };
+		12CD77391AC3476D00438D7E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77331AC3476D00438D7E /* Bolts.framework */; };
+		12CD773A1AC3476D00438D7E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77341AC3476D00438D7E /* Parse.framework */; };
+		12CD773B1AC3476D00438D7E /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77351AC3476D00438D7E /* ParseCrashReporting.framework */; };
+		12CD773C1AC3476D00438D7E /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77361AC3476D00438D7E /* ParseFacebookUtils.framework */; };
+		12CD773D1AC3476D00438D7E /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77371AC3476D00438D7E /* ParseFacebookUtilsV4.framework */; };
+		12CD773E1AC3476D00438D7E /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77381AC3476D00438D7E /* ParseUI.framework */; };
+		12CD77401AC34C6500438D7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD773F1AC34C6500438D7E /* CoreGraphics.framework */; };
+		12CD77421AC34C6F00438D7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77411AC34C6F00438D7E /* QuartzCore.framework */; };
+		12CD77441AC34C7F00438D7E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77431AC34C7F00438D7E /* CoreLocation.framework */; };
+		12CD77461AC34CE000438D7E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77451AC34CE000438D7E /* Social.framework */; };
+		12CD77481AC34D5900438D7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77471AC34D5900438D7E /* Foundation.framework */; };
+		12CD774B1AC34DF600438D7E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD774A1AC34DF600438D7E /* MobileCoreServices.framework */; };
+		12CD774D1AC34E0E00438D7E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD774C1AC34E0E00438D7E /* AudioToolbox.framework */; };
+		12CD774F1AC34E1A00438D7E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD774E1AC34E1A00438D7E /* CFNetwork.framework */; };
+		12CD77511AC34E2A00438D7E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77501AC34E2A00438D7E /* Security.framework */; };
+		12CD77531AC34E3700438D7E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77521AC34E3700438D7E /* StoreKit.framework */; };
+		12CD77551AC34E4700438D7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77541AC34E4700438D7E /* SystemConfiguration.framework */; };
+		12CD77571AC34E5700438D7E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77561AC34E5700438D7E /* libz.dylib */; };
+		12CD77591AC34E6700438D7E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77581AC34E6700438D7E /* libsqlite3.dylib */; };
+		12CD775C1AC3AD8A00438D7E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD775B1AC3AD8A00438D7E /* CameraViewController.m */; };
+		12CD775F1AC3ADF800438D7E /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD775E1AC3ADF800438D7E /* State.m */; };
+		12CD77621AC3AE3000438D7E /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD77611AC3AE3000438D7E /* Store.m */; };
+		12CD77651AC3AE4400438D7E /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD77641AC3AE4400438D7E /* Picture.m */; };
+		12CD77681AC3AE6400438D7E /* Display.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD77671AC3AE6400438D7E /* Display.m */; };
+		12CD776B1AC3AE8700438D7E /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD776A1AC3AE8700438D7E /* Team.m */; };
+		12CD776E1AC3B27800438D7E /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD776D1AC3B27800438D7E /* ModelController.m */; };
+		12D28E3D1AC4FE0A0090299E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D28E3C1AC4FE0A0090299E /* AVFoundation.framework */; };
+		12D28EAE1AC9DFE40090299E /* CustomLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D28EAD1AC9DFE40090299E /* CustomLoginViewController.m */; };
+		12D28EB11AC9E00A0090299E /* CustomSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D28EB01AC9E00A0090299E /* CustomSignUpViewController.m */; };
+		12D28EB31AC9E76D0090299E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D28EB21AC9E76D0090299E /* Accounts.framework */; };
+		12D28EB61ACA5CD20090299E /* SubmitPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D28EB51ACA5CD20090299E /* SubmitPictureViewController.m */; };
+		12D28EEB1ACB54910090299E /* AddReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D28EEA1ACB54910090299E /* AddReportViewController.m */; };
+		12D28EEE1ACB54E10090299E /* ViewReportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D28EED1ACB54E10090299E /* ViewReportsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		12F2EE251AD49D84007F1288 /* PBXContainerItemProxy */ = {
+		12CD76E21AC0650600438D7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 12F2EE031AD49D83007F1288 /* Project object */;
+			containerPortal = 12CD76C01AC0650400438D7E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 12F2EE0A1AD49D83007F1288;
+			remoteGlobalIDString = 12CD76C71AC0650400438D7E;
 			remoteInfo = NeffProject;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12F2EE0B1AD49D83007F1288 /* NeffProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeffProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		12F2EE0F1AD49D83007F1288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12F2EE101AD49D84007F1288 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		12F2EE121AD49D84007F1288 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		12F2EE131AD49D84007F1288 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		12F2EE151AD49D84007F1288 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		12F2EE161AD49D84007F1288 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		12F2EE191AD49D84007F1288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		12F2EE1B1AD49D84007F1288 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		12F2EE1E1AD49D84007F1288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		12F2EE241AD49D84007F1288 /* NeffProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeffProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		12F2EE291AD49D84007F1288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12F2EE2A1AD49D84007F1288 /* NeffProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeffProjectTests.m; sourceTree = "<group>"; };
+		128AE32F1AD2F23D00909D16 /* Bebas Neue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bebas Neue.ttf"; sourceTree = "<group>"; };
+		12CD76C81AC0650500438D7E /* NeffProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeffProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CD76CC1AC0650500438D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CD76CD1AC0650500438D7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12CD76CF1AC0650500438D7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		12CD76D01AC0650500438D7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12CD76D21AC0650500438D7E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		12CD76D31AC0650500438D7E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		12CD76D61AC0650600438D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12CD76D81AC0650600438D7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		12CD76DB1AC0650600438D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		12CD76E11AC0650600438D7E /* NeffProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeffProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CD76E61AC0650600438D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CD76E71AC0650600438D7E /* NeffProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeffProjectTests.m; sourceTree = "<group>"; };
+		12CD77331AC3476D00438D7E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		12CD77341AC3476D00438D7E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		12CD77351AC3476D00438D7E /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		12CD77361AC3476D00438D7E /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		12CD77371AC3476D00438D7E /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		12CD77381AC3476D00438D7E /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		12CD773F1AC34C6500438D7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		12CD77411AC34C6F00438D7E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		12CD77431AC34C7F00438D7E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		12CD77451AC34CE000438D7E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		12CD77471AC34D5900438D7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12CD774A1AC34DF600438D7E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		12CD774C1AC34E0E00438D7E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		12CD774E1AC34E1A00438D7E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		12CD77501AC34E2A00438D7E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		12CD77521AC34E3700438D7E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		12CD77541AC34E4700438D7E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		12CD77561AC34E5700438D7E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		12CD77581AC34E6700438D7E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		12CD775A1AC3AD8A00438D7E /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		12CD775B1AC3AD8A00438D7E /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		12CD775D1AC3ADF800438D7E /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		12CD775E1AC3ADF800438D7E /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		12CD77601AC3AE3000438D7E /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		12CD77611AC3AE3000438D7E /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		12CD77631AC3AE4400438D7E /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
+		12CD77641AC3AE4400438D7E /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		12CD77661AC3AE6400438D7E /* Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Display.h; sourceTree = "<group>"; };
+		12CD77671AC3AE6400438D7E /* Display.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Display.m; sourceTree = "<group>"; };
+		12CD77691AC3AE8700438D7E /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		12CD776A1AC3AE8700438D7E /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
+		12CD776C1AC3B27800438D7E /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		12CD776D1AC3B27800438D7E /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		12D28E3C1AC4FE0A0090299E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		12D28EAC1AC9DFE40090299E /* CustomLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLoginViewController.h; sourceTree = "<group>"; };
+		12D28EAD1AC9DFE40090299E /* CustomLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLoginViewController.m; sourceTree = "<group>"; };
+		12D28EAF1AC9E00A0090299E /* CustomSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSignUpViewController.h; sourceTree = "<group>"; };
+		12D28EB01AC9E00A0090299E /* CustomSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSignUpViewController.m; sourceTree = "<group>"; };
+		12D28EB21AC9E76D0090299E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		12D28EB41ACA5CD20090299E /* SubmitPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitPictureViewController.h; sourceTree = "<group>"; };
+		12D28EB51ACA5CD20090299E /* SubmitPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitPictureViewController.m; sourceTree = "<group>"; };
+		12D28EE91ACB54910090299E /* AddReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReportViewController.h; sourceTree = "<group>"; };
+		12D28EEA1ACB54910090299E /* AddReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReportViewController.m; sourceTree = "<group>"; };
+		12D28EEC1ACB54E10090299E /* ViewReportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewReportsViewController.h; sourceTree = "<group>"; };
+		12D28EED1ACB54E10090299E /* ViewReportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewReportsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		12F2EE081AD49D83007F1288 /* Frameworks */ = {
+		12CD76C51AC0650400438D7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D28EB31AC9E76D0090299E /* Accounts.framework in Frameworks */,
+				12D28E3D1AC4FE0A0090299E /* AVFoundation.framework in Frameworks */,
+				12CD77591AC34E6700438D7E /* libsqlite3.dylib in Frameworks */,
+				12CD77571AC34E5700438D7E /* libz.dylib in Frameworks */,
+				12CD77551AC34E4700438D7E /* SystemConfiguration.framework in Frameworks */,
+				12CD77531AC34E3700438D7E /* StoreKit.framework in Frameworks */,
+				12CD77511AC34E2A00438D7E /* Security.framework in Frameworks */,
+				12CD774F1AC34E1A00438D7E /* CFNetwork.framework in Frameworks */,
+				12CD774D1AC34E0E00438D7E /* AudioToolbox.framework in Frameworks */,
+				12CD774B1AC34DF600438D7E /* MobileCoreServices.framework in Frameworks */,
+				12CD77481AC34D5900438D7E /* Foundation.framework in Frameworks */,
+				12CD77461AC34CE000438D7E /* Social.framework in Frameworks */,
+				12CD77441AC34C7F00438D7E /* CoreLocation.framework in Frameworks */,
+				12CD77421AC34C6F00438D7E /* QuartzCore.framework in Frameworks */,
+				12CD77401AC34C6500438D7E /* CoreGraphics.framework in Frameworks */,
+				12CD773E1AC3476D00438D7E /* ParseUI.framework in Frameworks */,
+				12CD773A1AC3476D00438D7E /* Parse.framework in Frameworks */,
+				12CD773B1AC3476D00438D7E /* ParseCrashReporting.framework in Frameworks */,
+				12CD773C1AC3476D00438D7E /* ParseFacebookUtils.framework in Frameworks */,
+				12CD77391AC3476D00438D7E /* Bolts.framework in Frameworks */,
+				12CD773D1AC3476D00438D7E /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12F2EE211AD49D84007F1288 /* Frameworks */ = {
+		12CD76DE1AC0650600438D7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,75 +161,138 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12F2EE021AD49D83007F1288 = {
+		12CD76BF1AC0650400438D7E = {
 			isa = PBXGroup;
 			children = (
-				12F2EE0D1AD49D83007F1288 /* NeffProject */,
-				12F2EE271AD49D84007F1288 /* NeffProjectTests */,
-				12F2EE0C1AD49D83007F1288 /* Products */,
+				12CD76CA1AC0650500438D7E /* NeffProject */,
+				12CD76E41AC0650600438D7E /* NeffProjectTests */,
+				12CD76C91AC0650500438D7E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		12F2EE0C1AD49D83007F1288 /* Products */ = {
+		12CD76C91AC0650500438D7E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12F2EE0B1AD49D83007F1288 /* NeffProject.app */,
-				12F2EE241AD49D84007F1288 /* NeffProjectTests.xctest */,
+				12CD76C81AC0650500438D7E /* NeffProject.app */,
+				12CD76E11AC0650600438D7E /* NeffProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		12F2EE0D1AD49D83007F1288 /* NeffProject */ = {
+		12CD76CA1AC0650500438D7E /* NeffProject */ = {
 			isa = PBXGroup;
 			children = (
-				12F2EE121AD49D84007F1288 /* AppDelegate.h */,
-				12F2EE131AD49D84007F1288 /* AppDelegate.m */,
-				12F2EE151AD49D84007F1288 /* ViewController.h */,
-				12F2EE161AD49D84007F1288 /* ViewController.m */,
-				12F2EE181AD49D84007F1288 /* Main.storyboard */,
-				12F2EE1B1AD49D84007F1288 /* Images.xcassets */,
-				12F2EE1D1AD49D84007F1288 /* LaunchScreen.xib */,
-				12F2EE0E1AD49D83007F1288 /* Supporting Files */,
+				12CD76CF1AC0650500438D7E /* AppDelegate.h */,
+				12CD76D01AC0650500438D7E /* AppDelegate.m */,
+				12D28EAC1AC9DFE40090299E /* CustomLoginViewController.h */,
+				12D28EAD1AC9DFE40090299E /* CustomLoginViewController.m */,
+				12D28EAF1AC9E00A0090299E /* CustomSignUpViewController.h */,
+				12D28EB01AC9E00A0090299E /* CustomSignUpViewController.m */,
+				12CD76D21AC0650500438D7E /* ViewController.h */,
+				12CD76D31AC0650500438D7E /* ViewController.m */,
+				12D28EE91ACB54910090299E /* AddReportViewController.h */,
+				12D28EEA1ACB54910090299E /* AddReportViewController.m */,
+				12CD775A1AC3AD8A00438D7E /* CameraViewController.h */,
+				12CD775B1AC3AD8A00438D7E /* CameraViewController.m */,
+				12D28EB41ACA5CD20090299E /* SubmitPictureViewController.h */,
+				12D28EB51ACA5CD20090299E /* SubmitPictureViewController.m */,
+				12D28EEC1ACB54E10090299E /* ViewReportsViewController.h */,
+				12D28EED1ACB54E10090299E /* ViewReportsViewController.m */,
+				12CD775D1AC3ADF800438D7E /* State.h */,
+				12CD775E1AC3ADF800438D7E /* State.m */,
+				12CD77601AC3AE3000438D7E /* Store.h */,
+				12CD77611AC3AE3000438D7E /* Store.m */,
+				12CD77631AC3AE4400438D7E /* Picture.h */,
+				12CD77641AC3AE4400438D7E /* Picture.m */,
+				12CD77661AC3AE6400438D7E /* Display.h */,
+				12CD77671AC3AE6400438D7E /* Display.m */,
+				12CD77691AC3AE8700438D7E /* Team.h */,
+				12CD776A1AC3AE8700438D7E /* Team.m */,
+				12CD776C1AC3B27800438D7E /* ModelController.h */,
+				12CD776D1AC3B27800438D7E /* ModelController.m */,
+				12CD76D51AC0650600438D7E /* Main.storyboard */,
+				128AE32F1AD2F23D00909D16 /* Bebas Neue.ttf */,
+				12CD76D81AC0650600438D7E /* Images.xcassets */,
+				12CD76DA1AC0650600438D7E /* LaunchScreen.xib */,
+				12CD77491AC34D8C00438D7E /* frameworks */,
+				12CD76CB1AC0650500438D7E /* Supporting Files */,
 			);
 			path = NeffProject;
 			sourceTree = "<group>";
 		};
-		12F2EE0E1AD49D83007F1288 /* Supporting Files */ = {
+		12CD76CB1AC0650500438D7E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				12F2EE0F1AD49D83007F1288 /* Info.plist */,
-				12F2EE101AD49D84007F1288 /* main.m */,
+				12CD76CC1AC0650500438D7E /* Info.plist */,
+				12CD76CD1AC0650500438D7E /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		12F2EE271AD49D84007F1288 /* NeffProjectTests */ = {
+		12CD76E41AC0650600438D7E /* NeffProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				12F2EE2A1AD49D84007F1288 /* NeffProjectTests.m */,
-				12F2EE281AD49D84007F1288 /* Supporting Files */,
+				12CD76E71AC0650600438D7E /* NeffProjectTests.m */,
+				12CD76E51AC0650600438D7E /* Supporting Files */,
 			);
 			path = NeffProjectTests;
 			sourceTree = "<group>";
 		};
-		12F2EE281AD49D84007F1288 /* Supporting Files */ = {
+		12CD76E51AC0650600438D7E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				12F2EE291AD49D84007F1288 /* Info.plist */,
+				12CD76E61AC0650600438D7E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12CD77321AC3476D00438D7E /* parse-library-1.7.0 */ = {
+			isa = PBXGroup;
+			children = (
+				12CD77331AC3476D00438D7E /* Bolts.framework */,
+				12CD77341AC3476D00438D7E /* Parse.framework */,
+				12CD77351AC3476D00438D7E /* ParseCrashReporting.framework */,
+				12CD77361AC3476D00438D7E /* ParseFacebookUtils.framework */,
+				12CD77371AC3476D00438D7E /* ParseFacebookUtilsV4.framework */,
+				12CD77381AC3476D00438D7E /* ParseUI.framework */,
+			);
+			path = "parse-library-1.7.0";
+			sourceTree = "<group>";
+		};
+		12CD77491AC34D8C00438D7E /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12D28EB21AC9E76D0090299E /* Accounts.framework */,
+				12D28E3C1AC4FE0A0090299E /* AVFoundation.framework */,
+				12CD77581AC34E6700438D7E /* libsqlite3.dylib */,
+				12CD77561AC34E5700438D7E /* libz.dylib */,
+				12CD77541AC34E4700438D7E /* SystemConfiguration.framework */,
+				12CD77521AC34E3700438D7E /* StoreKit.framework */,
+				12CD77501AC34E2A00438D7E /* Security.framework */,
+				12CD774E1AC34E1A00438D7E /* CFNetwork.framework */,
+				12CD774C1AC34E0E00438D7E /* AudioToolbox.framework */,
+				12CD774A1AC34DF600438D7E /* MobileCoreServices.framework */,
+				12CD77471AC34D5900438D7E /* Foundation.framework */,
+				12CD77451AC34CE000438D7E /* Social.framework */,
+				12CD77431AC34C7F00438D7E /* CoreLocation.framework */,
+				12CD77411AC34C6F00438D7E /* QuartzCore.framework */,
+				12CD773F1AC34C6500438D7E /* CoreGraphics.framework */,
+				12CD77321AC3476D00438D7E /* parse-library-1.7.0 */,
+			);
+			name = frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		12F2EE0A1AD49D83007F1288 /* NeffProject */ = {
+		12CD76C71AC0650400438D7E /* NeffProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12F2EE2E1AD49D84007F1288 /* Build configuration list for PBXNativeTarget "NeffProject" */;
+			buildConfigurationList = 12CD76EB1AC0650600438D7E /* Build configuration list for PBXNativeTarget "NeffProject" */;
 			buildPhases = (
-				12F2EE071AD49D83007F1288 /* Sources */,
-				12F2EE081AD49D83007F1288 /* Frameworks */,
-				12F2EE091AD49D83007F1288 /* Resources */,
+				12CD76C41AC0650400438D7E /* Sources */,
+				12CD76C51AC0650400438D7E /* Frameworks */,
+				12CD76C61AC0650400438D7E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -136,46 +300,47 @@
 			);
 			name = NeffProject;
 			productName = NeffProject;
-			productReference = 12F2EE0B1AD49D83007F1288 /* NeffProject.app */;
+			productReference = 12CD76C81AC0650500438D7E /* NeffProject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		12F2EE231AD49D84007F1288 /* NeffProjectTests */ = {
+		12CD76E01AC0650600438D7E /* NeffProjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12F2EE311AD49D84007F1288 /* Build configuration list for PBXNativeTarget "NeffProjectTests" */;
+			buildConfigurationList = 12CD76EE1AC0650600438D7E /* Build configuration list for PBXNativeTarget "NeffProjectTests" */;
 			buildPhases = (
-				12F2EE201AD49D84007F1288 /* Sources */,
-				12F2EE211AD49D84007F1288 /* Frameworks */,
-				12F2EE221AD49D84007F1288 /* Resources */,
+				12CD76DD1AC0650600438D7E /* Sources */,
+				12CD76DE1AC0650600438D7E /* Frameworks */,
+				12CD76DF1AC0650600438D7E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				12F2EE261AD49D84007F1288 /* PBXTargetDependency */,
+				12CD76E31AC0650600438D7E /* PBXTargetDependency */,
 			);
 			name = NeffProjectTests;
 			productName = NeffProjectTests;
-			productReference = 12F2EE241AD49D84007F1288 /* NeffProjectTests.xctest */;
+			productReference = 12CD76E11AC0650600438D7E /* NeffProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		12F2EE031AD49D83007F1288 /* Project object */ = {
+		12CD76C01AC0650400438D7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Ryan S. Watt";
 				TargetAttributes = {
-					12F2EE0A1AD49D83007F1288 = {
+					12CD76C71AC0650400438D7E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = U5K4WANHCY;
 					};
-					12F2EE231AD49D84007F1288 = {
+					12CD76E01AC0650600438D7E = {
 						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 12F2EE0A1AD49D83007F1288;
+						TestTargetID = 12CD76C71AC0650400438D7E;
 					};
 				};
 			};
-			buildConfigurationList = 12F2EE061AD49D83007F1288 /* Build configuration list for PBXProject "NeffProject" */;
+			buildConfigurationList = 12CD76C31AC0650400438D7E /* Build configuration list for PBXProject "NeffProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,29 +348,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 12F2EE021AD49D83007F1288;
-			productRefGroup = 12F2EE0C1AD49D83007F1288 /* Products */;
+			mainGroup = 12CD76BF1AC0650400438D7E;
+			productRefGroup = 12CD76C91AC0650500438D7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12F2EE0A1AD49D83007F1288 /* NeffProject */,
-				12F2EE231AD49D84007F1288 /* NeffProjectTests */,
+				12CD76C71AC0650400438D7E /* NeffProject */,
+				12CD76E01AC0650600438D7E /* NeffProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		12F2EE091AD49D83007F1288 /* Resources */ = {
+		12CD76C61AC0650400438D7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12F2EE1A1AD49D84007F1288 /* Main.storyboard in Resources */,
-				12F2EE1F1AD49D84007F1288 /* LaunchScreen.xib in Resources */,
-				12F2EE1C1AD49D84007F1288 /* Images.xcassets in Resources */,
+				128AE3301AD2F43000909D16 /* Bebas Neue.ttf in Resources */,
+				12CD76D71AC0650600438D7E /* Main.storyboard in Resources */,
+				12CD76DC1AC0650600438D7E /* LaunchScreen.xib in Resources */,
+				12CD76D91AC0650600438D7E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12F2EE221AD49D84007F1288 /* Resources */ = {
+		12CD76DF1AC0650600438D7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,47 +381,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		12F2EE071AD49D83007F1288 /* Sources */ = {
+		12CD76C41AC0650400438D7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12F2EE171AD49D84007F1288 /* ViewController.m in Sources */,
-				12F2EE141AD49D84007F1288 /* AppDelegate.m in Sources */,
-				12F2EE111AD49D84007F1288 /* main.m in Sources */,
+				12D28EEE1ACB54E10090299E /* ViewReportsViewController.m in Sources */,
+				12CD76D41AC0650500438D7E /* ViewController.m in Sources */,
+				12CD77651AC3AE4400438D7E /* Picture.m in Sources */,
+				12CD77681AC3AE6400438D7E /* Display.m in Sources */,
+				12D28EB11AC9E00A0090299E /* CustomSignUpViewController.m in Sources */,
+				12CD775F1AC3ADF800438D7E /* State.m in Sources */,
+				12CD776B1AC3AE8700438D7E /* Team.m in Sources */,
+				12D28EB61ACA5CD20090299E /* SubmitPictureViewController.m in Sources */,
+				12CD775C1AC3AD8A00438D7E /* CameraViewController.m in Sources */,
+				12D28EEB1ACB54910090299E /* AddReportViewController.m in Sources */,
+				12CD77621AC3AE3000438D7E /* Store.m in Sources */,
+				12CD776E1AC3B27800438D7E /* ModelController.m in Sources */,
+				12CD76D11AC0650500438D7E /* AppDelegate.m in Sources */,
+				12D28EAE1AC9DFE40090299E /* CustomLoginViewController.m in Sources */,
+				12CD76CE1AC0650500438D7E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12F2EE201AD49D84007F1288 /* Sources */ = {
+		12CD76DD1AC0650600438D7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12F2EE2B1AD49D84007F1288 /* NeffProjectTests.m in Sources */,
+				12CD76E81AC0650600438D7E /* NeffProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		12F2EE261AD49D84007F1288 /* PBXTargetDependency */ = {
+		12CD76E31AC0650600438D7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 12F2EE0A1AD49D83007F1288 /* NeffProject */;
-			targetProxy = 12F2EE251AD49D84007F1288 /* PBXContainerItemProxy */;
+			target = 12CD76C71AC0650400438D7E /* NeffProject */;
+			targetProxy = 12CD76E21AC0650600438D7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		12F2EE181AD49D84007F1288 /* Main.storyboard */ = {
+		12CD76D51AC0650600438D7E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				12F2EE191AD49D84007F1288 /* Base */,
+				12CD76D61AC0650600438D7E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		12F2EE1D1AD49D84007F1288 /* LaunchScreen.xib */ = {
+		12CD76DA1AC0650600438D7E /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				12F2EE1E1AD49D84007F1288 /* Base */,
+				12CD76DB1AC0650600438D7E /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -263,7 +441,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		12F2EE2C1AD49D84007F1288 /* Debug */ = {
+		12CD76E91AC0650600438D7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -304,7 +482,7 @@
 			};
 			name = Debug;
 		};
-		12F2EE2D1AD49D84007F1288 /* Release */ = {
+		12CD76EA1AC0650600438D7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -339,27 +517,41 @@
 			};
 			name = Release;
 		};
-		12F2EE2F1AD49D84007F1288 /* Debug */ = {
+		12CD76EC1AC0650600438D7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.0",
+				);
 				INFOPLIST_FILE = NeffProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
-		12F2EE301AD49D84007F1288 /* Release */ = {
+		12CD76ED1AC0650600438D7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.0",
+				);
 				INFOPLIST_FILE = NeffProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
-		12F2EE321AD49D84007F1288 /* Debug */ = {
+		12CD76EF1AC0650600438D7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -378,7 +570,7 @@
 			};
 			name = Debug;
 		};
-		12F2EE331AD49D84007F1288 /* Release */ = {
+		12CD76F01AC0650600438D7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -396,32 +588,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12F2EE061AD49D83007F1288 /* Build configuration list for PBXProject "NeffProject" */ = {
+		12CD76C31AC0650400438D7E /* Build configuration list for PBXProject "NeffProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12F2EE2C1AD49D84007F1288 /* Debug */,
-				12F2EE2D1AD49D84007F1288 /* Release */,
+				12CD76E91AC0650600438D7E /* Debug */,
+				12CD76EA1AC0650600438D7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12F2EE2E1AD49D84007F1288 /* Build configuration list for PBXNativeTarget "NeffProject" */ = {
+		12CD76EB1AC0650600438D7E /* Build configuration list for PBXNativeTarget "NeffProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12F2EE2F1AD49D84007F1288 /* Debug */,
-				12F2EE301AD49D84007F1288 /* Release */,
+				12CD76EC1AC0650600438D7E /* Debug */,
+				12CD76ED1AC0650600438D7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		12F2EE311AD49D84007F1288 /* Build configuration list for PBXNativeTarget "NeffProjectTests" */ = {
+		12CD76EE1AC0650600438D7E /* Build configuration list for PBXNativeTarget "NeffProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12F2EE321AD49D84007F1288 /* Debug */,
-				12F2EE331AD49D84007F1288 /* Release */,
+				12CD76EF1AC0650600438D7E /* Debug */,
+				12CD76F01AC0650600438D7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 12F2EE031AD49D83007F1288 /* Project object */;
+	rootObject = 12CD76C01AC0650400438D7E /* Project object */;
 }

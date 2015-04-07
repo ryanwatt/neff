@@ -2,11 +2,14 @@
 //  AppDelegate.m
 //  NeffProject
 //
-//  Created by Ryan S. Watt on 4/7/15.
+//  Created by Ryan S. Watt on 3/23/15.
 //  Copyright (c) 2015 Ryan S. Watt. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "Picture.h"
+
 
 @interface AppDelegate ()
 
@@ -16,7 +19,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [Parse enableLocalDatastore];
+    [Parse setApplicationId:@"MH9pu8J4MFwYVSuIldWxGHxNQJ6SItniU9aujGjD"
+                  clientKey:@"tFp2lQ992GDyFk1tHTA7YG5WnIASxGf9TSs6e8My"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+        
+    ViewController *viewController = [ViewController new];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = navController;
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
