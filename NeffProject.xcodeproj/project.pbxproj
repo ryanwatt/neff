@@ -29,9 +29,7 @@
 		12CD77571AC34E5700438D7E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77561AC34E5700438D7E /* libz.dylib */; };
 		12CD77591AC34E6700438D7E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD77581AC34E6700438D7E /* libsqlite3.dylib */; };
 		12CD775C1AC3AD8A00438D7E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD775B1AC3AD8A00438D7E /* CameraViewController.m */; };
-		12CD77621AC3AE3000438D7E /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD77611AC3AE3000438D7E /* Store.m */; };
 		12CD77651AC3AE4400438D7E /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD77641AC3AE4400438D7E /* Picture.m */; };
-		12CD77681AC3AE6400438D7E /* Display.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD77671AC3AE6400438D7E /* Display.m */; };
 		12CD776E1AC3B27800438D7E /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD776D1AC3B27800438D7E /* ModelController.m */; };
 		12D28E3D1AC4FE0A0090299E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D28E3C1AC4FE0A0090299E /* AVFoundation.framework */; };
 		12D28EAE1AC9DFE40090299E /* CustomLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D28EAD1AC9DFE40090299E /* CustomLoginViewController.m */; };
@@ -46,6 +44,11 @@
 		12F2EE501AD4A4D2007F1288 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F2EE431AD4A4A7007F1288 /* ParseFacebookUtils.framework */; };
 		12F2EE511AD4A4D5007F1288 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F2EE441AD4A4A7007F1288 /* ParseFacebookUtilsV4.framework */; };
 		12F2EE521AD4A4D7007F1288 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F2EE451AD4A4A7007F1288 /* ParseUI.framework */; };
+		12F2EE551AD5C5B3007F1288 /* PictureInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F2EE541AD5C5B3007F1288 /* PictureInfo.m */; };
+		12F2EE581AD5D352007F1288 /* ViewReportsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F2EE571AD5D352007F1288 /* ViewReportsDataSource.m */; };
+		12F2EE5B1AD5D40D007F1288 /* ViewReportsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F2EE5A1AD5D40D007F1288 /* ViewReportsTableViewCell.m */; };
+		12F2EE621AD5E646007F1288 /* ViewReportsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F2EE611AD5E646007F1288 /* ViewReportsCollectionView.m */; };
+		12F2EE651AD5E68C007F1288 /* ViewReportsCVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F2EE641AD5E68C007F1288 /* ViewReportsCVDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,12 +91,8 @@
 		12CD77581AC34E6700438D7E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		12CD775A1AC3AD8A00438D7E /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		12CD775B1AC3AD8A00438D7E /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
-		12CD77601AC3AE3000438D7E /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
-		12CD77611AC3AE3000438D7E /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 		12CD77631AC3AE4400438D7E /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
 		12CD77641AC3AE4400438D7E /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
-		12CD77661AC3AE6400438D7E /* Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Display.h; sourceTree = "<group>"; };
-		12CD77671AC3AE6400438D7E /* Display.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Display.m; sourceTree = "<group>"; };
 		12CD776C1AC3B27800438D7E /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
 		12CD776D1AC3B27800438D7E /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		12D28E3C1AC4FE0A0090299E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +113,16 @@
 		12F2EE431AD4A4A7007F1288 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		12F2EE441AD4A4A7007F1288 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		12F2EE451AD4A4A7007F1288 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		12F2EE531AD5C5B3007F1288 /* PictureInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureInfo.h; path = ../../../Documents/PictureInfo.h; sourceTree = "<group>"; };
+		12F2EE541AD5C5B3007F1288 /* PictureInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureInfo.m; path = ../../../Documents/PictureInfo.m; sourceTree = "<group>"; };
+		12F2EE561AD5D352007F1288 /* ViewReportsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewReportsDataSource.h; sourceTree = "<group>"; };
+		12F2EE571AD5D352007F1288 /* ViewReportsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewReportsDataSource.m; sourceTree = "<group>"; };
+		12F2EE591AD5D40D007F1288 /* ViewReportsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewReportsTableViewCell.h; sourceTree = "<group>"; };
+		12F2EE5A1AD5D40D007F1288 /* ViewReportsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewReportsTableViewCell.m; sourceTree = "<group>"; };
+		12F2EE601AD5E646007F1288 /* ViewReportsCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewReportsCollectionView.h; sourceTree = "<group>"; };
+		12F2EE611AD5E646007F1288 /* ViewReportsCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewReportsCollectionView.m; sourceTree = "<group>"; };
+		12F2EE631AD5E68C007F1288 /* ViewReportsCVDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewReportsCVDataSource.h; sourceTree = "<group>"; };
+		12F2EE641AD5E68C007F1288 /* ViewReportsCVDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewReportsCVDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,28 +187,10 @@
 			children = (
 				12CD76CF1AC0650500438D7E /* AppDelegate.h */,
 				12CD76D01AC0650500438D7E /* AppDelegate.m */,
-				12D28EAC1AC9DFE40090299E /* CustomLoginViewController.h */,
-				12D28EAD1AC9DFE40090299E /* CustomLoginViewController.m */,
-				12D28EAF1AC9E00A0090299E /* CustomSignUpViewController.h */,
-				12D28EB01AC9E00A0090299E /* CustomSignUpViewController.m */,
-				12CD76D21AC0650500438D7E /* ViewController.h */,
-				12CD76D31AC0650500438D7E /* ViewController.m */,
-				12D28EE91ACB54910090299E /* AddReportViewController.h */,
-				12D28EEA1ACB54910090299E /* AddReportViewController.m */,
-				12CD775A1AC3AD8A00438D7E /* CameraViewController.h */,
-				12CD775B1AC3AD8A00438D7E /* CameraViewController.m */,
-				12D28EB41ACA5CD20090299E /* SubmitPictureViewController.h */,
-				12D28EB51ACA5CD20090299E /* SubmitPictureViewController.m */,
-				12D28EEC1ACB54E10090299E /* ViewReportsViewController.h */,
-				12D28EED1ACB54E10090299E /* ViewReportsViewController.m */,
-				12CD77601AC3AE3000438D7E /* Store.h */,
-				12CD77611AC3AE3000438D7E /* Store.m */,
-				12CD77631AC3AE4400438D7E /* Picture.h */,
-				12CD77641AC3AE4400438D7E /* Picture.m */,
-				12CD77661AC3AE6400438D7E /* Display.h */,
-				12CD77671AC3AE6400438D7E /* Display.m */,
-				12CD776C1AC3B27800438D7E /* ModelController.h */,
-				12CD776D1AC3B27800438D7E /* ModelController.m */,
+				12F2EE5E1AD5D478007F1288 /* Login/SignUp */,
+				12F2EE5D1AD5D45A007F1288 /* Add Report */,
+				12F2EE5C1AD5D43C007F1288 /* View Reports */,
+				12F2EE5F1AD5D49E007F1288 /* Model Objects n Controller */,
 				12CD76D51AC0650600438D7E /* Main.storyboard */,
 				128AE32F1AD2F23D00909D16 /* Bebas Neue.ttf */,
 				12CD76D81AC0650600438D7E /* Images.xcassets */,
@@ -272,6 +263,62 @@
 			);
 			name = Parse;
 			path = NeffProject;
+			sourceTree = "<group>";
+		};
+		12F2EE5C1AD5D43C007F1288 /* View Reports */ = {
+			isa = PBXGroup;
+			children = (
+				12F2EE601AD5E646007F1288 /* ViewReportsCollectionView.h */,
+				12F2EE611AD5E646007F1288 /* ViewReportsCollectionView.m */,
+				12F2EE631AD5E68C007F1288 /* ViewReportsCVDataSource.h */,
+				12F2EE641AD5E68C007F1288 /* ViewReportsCVDataSource.m */,
+				12D28EEC1ACB54E10090299E /* ViewReportsViewController.h */,
+				12D28EED1ACB54E10090299E /* ViewReportsViewController.m */,
+				12F2EE591AD5D40D007F1288 /* ViewReportsTableViewCell.h */,
+				12F2EE5A1AD5D40D007F1288 /* ViewReportsTableViewCell.m */,
+				12F2EE561AD5D352007F1288 /* ViewReportsDataSource.h */,
+				12F2EE571AD5D352007F1288 /* ViewReportsDataSource.m */,
+			);
+			name = "View Reports";
+			sourceTree = "<group>";
+		};
+		12F2EE5D1AD5D45A007F1288 /* Add Report */ = {
+			isa = PBXGroup;
+			children = (
+				12CD76D21AC0650500438D7E /* ViewController.h */,
+				12CD76D31AC0650500438D7E /* ViewController.m */,
+				12D28EE91ACB54910090299E /* AddReportViewController.h */,
+				12D28EEA1ACB54910090299E /* AddReportViewController.m */,
+				12CD775A1AC3AD8A00438D7E /* CameraViewController.h */,
+				12CD775B1AC3AD8A00438D7E /* CameraViewController.m */,
+				12D28EB41ACA5CD20090299E /* SubmitPictureViewController.h */,
+				12D28EB51ACA5CD20090299E /* SubmitPictureViewController.m */,
+			);
+			name = "Add Report";
+			sourceTree = "<group>";
+		};
+		12F2EE5E1AD5D478007F1288 /* Login/SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				12D28EAC1AC9DFE40090299E /* CustomLoginViewController.h */,
+				12D28EAD1AC9DFE40090299E /* CustomLoginViewController.m */,
+				12D28EAF1AC9E00A0090299E /* CustomSignUpViewController.h */,
+				12D28EB01AC9E00A0090299E /* CustomSignUpViewController.m */,
+			);
+			name = Login/SignUp;
+			sourceTree = "<group>";
+		};
+		12F2EE5F1AD5D49E007F1288 /* Model Objects n Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12CD77631AC3AE4400438D7E /* Picture.h */,
+				12CD77641AC3AE4400438D7E /* Picture.m */,
+				12F2EE531AD5C5B3007F1288 /* PictureInfo.h */,
+				12F2EE541AD5C5B3007F1288 /* PictureInfo.m */,
+				12CD776C1AC3B27800438D7E /* ModelController.h */,
+				12CD776D1AC3B27800438D7E /* ModelController.m */,
+			);
+			name = "Model Objects n Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,18 +423,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F2EE551AD5C5B3007F1288 /* PictureInfo.m in Sources */,
 				12D28EEE1ACB54E10090299E /* ViewReportsViewController.m in Sources */,
+				12F2EE651AD5E68C007F1288 /* ViewReportsCVDataSource.m in Sources */,
 				12CD76D41AC0650500438D7E /* ViewController.m in Sources */,
 				12CD77651AC3AE4400438D7E /* Picture.m in Sources */,
-				12CD77681AC3AE6400438D7E /* Display.m in Sources */,
 				12D28EB11AC9E00A0090299E /* CustomSignUpViewController.m in Sources */,
 				12D28EB61ACA5CD20090299E /* SubmitPictureViewController.m in Sources */,
+				12F2EE621AD5E646007F1288 /* ViewReportsCollectionView.m in Sources */,
 				12CD775C1AC3AD8A00438D7E /* CameraViewController.m in Sources */,
+				12F2EE581AD5D352007F1288 /* ViewReportsDataSource.m in Sources */,
 				12D28EEB1ACB54910090299E /* AddReportViewController.m in Sources */,
-				12CD77621AC3AE3000438D7E /* Store.m in Sources */,
 				12CD776E1AC3B27800438D7E /* ModelController.m in Sources */,
 				12CD76D11AC0650500438D7E /* AppDelegate.m in Sources */,
 				12D28EAE1AC9DFE40090299E /* CustomLoginViewController.m in Sources */,
+				12F2EE5B1AD5D40D007F1288 /* ViewReportsTableViewCell.m in Sources */,
 				12CD76CE1AC0650500438D7E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

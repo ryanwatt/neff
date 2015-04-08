@@ -7,18 +7,11 @@
 //
 
 #import <Parse/Parse.h>
-#import "Store.h"
 #import "Picture.h"
-@class Display;
-
-static NSString *pictureStoreKey = @"pictureStoreKey";
-static NSString *pictureDisplayKey = @"pictureDisplayKey";
-
-
+#import "PictureInfo.h"
 @interface Picture : PFObject
 
 @property (nonatomic,strong) PFFile *picture;
-@property (nonatomic, strong) Store *store;
-@property (nonatomic, strong) Display *display;
+@property (nonatomic, strong) PictureInfo *info;
 
 @end

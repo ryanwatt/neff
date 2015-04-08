@@ -10,7 +10,6 @@
 
 @implementation Picture
 
-@dynamic store;
-@dynamic display;
-@dynamic picture;
+@dynamic picture,info;
+
 @end

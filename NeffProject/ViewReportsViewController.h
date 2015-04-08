@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewReportsViewController : UIViewController
+@interface ViewReportsViewController : UITableViewController
 
 @end

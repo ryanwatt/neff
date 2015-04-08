@@ -8,16 +8,36 @@
 
 #import "ViewReportsViewController.h"
 
-@interface ViewReportsViewController ()
+@interface ViewReportsViewController () <UITableViewDelegate>
 
 @end
 
 @implementation ViewReportsViewController
 
+-(void)viewDidAppear:(BOOL)animated {
+    
+    [self reloadTable];
+}
+
+- (void)reloadTable {
+    [self.tableView reloadData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    [self.tableView setBackgroundColor:[UIColor blackColor]];
+    [self.tableView setTintColor:[UIColor whiteColor]];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    return self.view.frame.size.width;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -113,17 +113,18 @@ AVCaptureVideoPreviewLayer *previewLayer;
             NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
             self.image = [UIImage imageWithData:imageData];
             PFFile *imageFile = [PFFile fileWithName:@"newImage" data:imageData];
-            [[ModelController sharedInstance] savePicture:imageFile];
+            [ModelController sharedInstance].picture = imageFile;
             //self.imageView.image = self.image;
             blockImage = self.image;
             SubmitPictureViewController *submit = [SubmitPictureViewController new];
+            [submit setModalPresentationStyle:UIModalPresentationOverCurrentContext];
             submit.thumbnail = blockImage;
-            [self.navigationController pushViewController:submit animated:YES];
+            [self presentViewController:submit animated:YES completion:nil];
         }
-        [session stopRunning];
-        [previewLayer removeFromSuperlayer];
-        session = nil;
-        previewLayer = nil;
+//        [session stopRunning];
+//        [previewLayer removeFromSuperlayer];
+//        session = nil;
+//        previewLayer = nil;
         
     }];
     

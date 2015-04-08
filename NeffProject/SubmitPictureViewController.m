@@ -51,6 +51,7 @@
     notesView.layer.borderWidth = 0.5f;
     [self.view addSubview:notesView];
     
+    
     UIButton *submitButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 320 , notesView.frame.size.height + notesView.frame.origin.y + 5 , 265, 60)];
     submitButton.backgroundColor = [UIColor blackColor];
     [submitButton setTitle:@"Submit to Neff" forState:UIControlStateNormal];
@@ -71,7 +72,9 @@
 }
 
 - (void)submitToNeff:(id)sender {
-   
+    PFFile *picture = [ModelController sharedInstance].picture;
+    [[ModelController sharedInstance] savePicture:picture];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 //- (void)backToHome:(id)sender {

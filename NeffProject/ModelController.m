@@ -20,38 +20,22 @@
     return sharedInstance;
 }
 
-- (void)savePicture:(PFFile *)picture withDisplay:(Display *)display andStore:(Store *)store {
-    Picture *newPicture = [Picture objectWithClassName:@"Picture"];
-    newPicture[@"picture"] = picture;
-    newPicture[@"store"] = store;
-    newPicture[@"display"] = display;
-    [newPicture saveInBackground];
+-(NSArray *)pictures
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"Picture"];
+//    PFObject *picture = [PFObject objectWithClassName:@"Picture"];
+//    [query whereKey:picture.ACL equalTo:[PFUser currentUser].objectId];
+    return [query findObjects];
 }
-
 
 -(void)savePicture:(PFFile *)picture
 {
     Picture *newPicture = [Picture objectWithClassName:@"Picture"];
+    newPicture.ACL = [PFACL ACLWithUser:[PFUser currentUser]];
     newPicture[@"picture"] = picture;
     [newPicture saveInBackground];
 }
-- (void)saveStore:(PFObject *)store withName:(NSString *)name andDisplays:(PFObject *)display andStoreId:(NSString *)storeId {
-    Store *newStore = [Store objectWithClassName:@"Store"];
-    newStore[@"store"] = store;
-    newStore[@"name"] = name;
-    newStore[@"display"] = display;
-    newStore[@"storeId"] = storeId;
-    [newStore saveInBackground];
-    
-}
 
-//- (NSArray *)picturesArray {
-//    
-//}
-//
-//- (NSArray *)storesArray {
-//    
-//}
 
 
 @end

@@ -12,6 +12,7 @@
 #import "CameraViewController.h"
 #import "AddReportViewController.h"
 #import "ViewReportsViewController.h"
+#import "ViewReportsCollectionView.h"
 #import <Parse/Parse.h>
 
 
@@ -201,7 +202,7 @@
 }
 
 -(void)viewReports:(id)sender {
-    ViewReportsViewController *viewReportsVC = [ViewReportsViewController new];
+    ViewReportsCollectionView *viewReportsVC = [ViewReportsCollectionView new];
     [self.navigationController pushViewController:viewReportsVC animated:YES];
 }
 
