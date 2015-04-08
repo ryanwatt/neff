@@ -10,7 +10,6 @@
 #import "Store.h"
 #import "Picture.h"
 @class Display;
-#import "State.h"
 
 static NSString *pictureStoreKey = @"pictureStoreKey";
 static NSString *pictureDisplayKey = @"pictureDisplayKey";
