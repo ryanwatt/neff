@@ -11,7 +11,7 @@
 #import "ModelController.h"
 #import "ViewController.h"
 
-@interface SubmitPictureViewController ()
+@interface SubmitPictureViewController () <UITextViewDelegate>
 
 @property (nonatomic, strong) UITextView *notesView;
 
@@ -25,9 +25,16 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tapGesture];
+
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     self.view.backgroundColor = [UIColor blackColor];
     [self layoutStructures];
+    
+    self.notesView.delegate = self;
+    
 }
 
 - (void)layoutStructures {
@@ -76,6 +83,11 @@
     
 }
 
+-(void)dismissKeyboard
+{
+    [self.notesView resignFirstResponder];
+}
+
 - (void)submitToNeff:(id)sender {
     PFFile *picture = [ModelController sharedInstance].picture;
     [[ModelController sharedInstance] savePicture:picture withNotes:self.notesView.text];
@@ -85,6 +97,8 @@
 - (void)backToCamera:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
 
 
 

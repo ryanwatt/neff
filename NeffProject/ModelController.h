@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
-
+#import "PictureInfo.h"
 #import "Picture.h"
 
 

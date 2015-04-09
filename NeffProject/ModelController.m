@@ -31,10 +31,13 @@
 - (void)savePicture:(PFFile *)picture withNotes:(NSString *)notes
 {
     Picture *newPicture = [Picture objectWithClassName:@"Picture"];
+//    PictureInfo *info = [PictureInfo objectWithClassName:@"PictureInfo"];
     newPicture.ACL = [PFACL ACLWithUser:[PFUser currentUser]];
     newPicture[@"picture"] = picture;
-//    newPicture.info[@""]
+//    info[@"notes"]= notes;
+//    newPicture[@"PictureInfo"] = info;
     [newPicture saveInBackground];
+//    [info saveInBackground];
 }
 
 
