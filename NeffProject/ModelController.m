@@ -20,7 +20,7 @@
     return sharedInstance;
 }
 
--(NSArray *)pictures
+- (NSArray *)pictures
 {
     PFQuery *query = [PFQuery queryWithClassName:@"Picture"];
 //    PFObject *picture = [PFObject objectWithClassName:@"Picture"];
@@ -28,11 +28,12 @@
     return [query findObjects];
 }
 
--(void)savePicture:(PFFile *)picture
+- (void)savePicture:(PFFile *)picture withNotes:(NSString *)notes
 {
     Picture *newPicture = [Picture objectWithClassName:@"Picture"];
     newPicture.ACL = [PFACL ACLWithUser:[PFUser currentUser]];
     newPicture[@"picture"] = picture;
+//    newPicture.info[@""]
     [newPicture saveInBackground];
 }
 

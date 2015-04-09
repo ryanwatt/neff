@@ -19,7 +19,7 @@
 
 + (ModelController *)sharedInstance;
 
--(void)savePicture:(PFFile *)picture;
+- (void)savePicture:(PFFile *)picture withNotes:(NSString *)notes;
 
 
 
